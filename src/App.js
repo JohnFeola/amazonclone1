@@ -1,5 +1,9 @@
 //used this tutorial, with many changes: https://www.youtube.com/watch?v=RDV3Z1KCBvo
 
+
+//currently at 2:09:24 !!! just created reducer.js, and will probably create 'stateProvider' next for this data layer to then pull numbers
+//from components to shopping cart total. 
+
 import './App.css';
 import Header from './Header';
 import Home from './Home';
@@ -9,17 +13,18 @@ import Checkout from './Checkout';
 
 function App() {
   return (
-    //using 'BEM' naming convention
     <Router>
     <div className="app">
-    <Header />
+    
 
       <Switch>
-        <Route path="/checkout">
+        <Route path="/checkout" exact>
+        <Header />
           <Checkout />
         </Route>
 
-        <Route path="/">
+        <Route path="/" exact>
+        <Header />
           <Home />
         </Route>
 
