@@ -1,15 +1,17 @@
 //used this tutorial, with many changes: https://www.youtube.com/watch?v=RDV3Z1KCBvo
 
 
-//currently at 2:09:24 !!! just created reducer.js, and will probably create 'stateProvider' next for this data layer to then pull numbers
-//from components to shopping cart total. 
+
+//now at 4:03:11 ... was just in Login.js doing 'useHistory' ... registering now works 
+
+//now at 3:51:21, about to finish user authentication, then deploy 
 
 import './App.css';
 import Header from './Header';
 import Home from './Home';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Checkout from './Checkout';
-
+import Login from './Login';
 
 function App() {
   return (
@@ -18,6 +20,10 @@ function App() {
     
 
       <Switch>
+        <Route path="/login">
+         <Login/>
+        </Route>
+
         <Route path="/checkout" exact>
         <Header />
           <Checkout />
