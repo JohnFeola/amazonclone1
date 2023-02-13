@@ -9,7 +9,7 @@ function Home() {
   return (
     <div className='home'>
         <div className='home__container'>
-            <img className='home__image' src='https://m.media-amazon.com/images/I/613IvcWHzvL._SX3000_.jpg' alt='prime video promo'/>
+            <img className='home__image' src='https://m.media-amazon.com/images/I/61B5QeaxEpL._SX3000_.jpg' alt='asdf'/>
             <div className='home__row'>
             <Product id="32599" title="Software Engineering Intern : John Feola"
                 price={15.00} image="https://i.postimg.cc/90jsv52n/linked-in-profile-pic-2.png"

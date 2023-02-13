@@ -41,3 +41,11 @@
 .product__rating{
     display: flex;
 }
+
+.product > button:active{
+    transform: scale(1.02);
+}
+
+.product > button:hover{
+    box-shadow: 0 0 0 1px black;
+}

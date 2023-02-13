@@ -28,3 +28,13 @@
 
 }
 
+
+.checkoutProduct__info > button:hover {
+    box-shadow: 0 0 0 1px black;
+}
+
+
+.checkoutProduct__info > button:active {
+    transform: scale(1.02);  
+}
+

@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import { Link, useHistory } from 'react-router-dom'
-import './Login.css'
+import './Login.css';
 import {auth} from './firebase.js';
 // import { useStateValue } from './StateProvider';
 
@@ -14,6 +14,12 @@ function Login() {
     const signIn = e => {
         e.preventDefault()
 
+
+        auth.signInWithEmailAndPassword(email, password)
+        .then(auth => {
+            history.push('/')
+        })
+        .catch(error => alert(error.message))
         //now firebase login
     }
 
