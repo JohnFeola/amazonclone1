@@ -15,6 +15,7 @@ import Login from './Login';
 import {auth} from './firebase.js';
 import { useStateValue } from './StateProvider';
 import { useEffect } from 'react';
+import { Helmet } from 'react-helmet';
 
 function App() {
   const [{}, dispatch] = useStateValue();
